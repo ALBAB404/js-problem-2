@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+    
+    // 1. Program to print natural numbers from 1 to n.
+
+        // for ( var n=1 ; n<11;n++){
+        //     console.log(n);
+        // }
+
+        // 2. Write a C program to print all natural numbers in reverse from n to 1 using for loop.   
+
+        for(var n = 10; n>0 ;n--){
+        console.log(n);
+         }
+
+        //  Write a C program to find the sum of all natural numbers    between 1 to n using for loop. 
+
+        var n=10;
+       var sum=0;
+        for (var i = 1;i<=n;i++){
+        sum = sum +i;
+   
+        }
+
+        console.log(sum);
+
+
+        // Write a C program to input a number from user and print multiplication table of the given number using for loop.
+
+
+        var n =10;
+var sum=0;
+
+for(var i = 1;i<=10;i++){
+
+    sum = n*i;
+
+    console.log(sum);
+}
+
+// 6. Write a C program to input a number from user and count number of digits in the given integer using loop:
+
+var number = 135;
+				var reminder = 0;
+				var sum = 0;
+				var count = 0;
+
+				while (number != 0) {
+				    reminder = number % 10;
+				    sum = sum + reminder;
+				    number = parseInt(number / 10);
+				    count++;
+				}
+				document.write('Sum: ' + sum + "<br>");
+				document.write("Total Digit: " + count + "<br>");
+
+                 //_______________ JavaScript Arrays ___________________//
+
+
+                 var fruits = ['banana ', ' apple ', ' mango ', ' jack fruit', 'orange'];
+
+				document.write(fruits+'<br>');
+				document.write(fruits[0] + '<br>');
+
+
+                //_______________ Arrays are Objects__________________//
+                
+
+
+				var student = { name: 'Ariyan', age: 26, cgpa: 3.60 };
+
+                    document.write(student.name + '<br>');
+                    document.write(student.age + '<br>');
+                    document.write(student.cgpa + '<br>');
+                    
+
+
+
+                 //_______________ JavaScript Function ___________________//
+
+
+                var num1 = 10;
+				var num2 = 15;
+
+				function sum(num1, num2) {
+				    var result = num1 + num2;
+				    document.write(result + "<br>");
+				}
+
+				sum(10, 20);
+				sum(10, 50);
+				sum(100, 50);
+
+
+
+                  //_________ JavaScript Frontend __________//
+                
+
+
+				var title = document.getElementById('title');
+
+                title.style.fontSize = '20px';
+
+                var menus = document.getElementsByClassName('nav-link');
+
+                menus[3].style.fontSize = '30px';
+
+                var banner = document.querySelector('.banner h1');
+
+                var button = document.querySelectorAll('button');
+
+
+
+
+
+    </script>
+</body>
+</html>
